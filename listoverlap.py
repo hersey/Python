@@ -31,3 +31,9 @@ for i in a:
 			common.append(i)
 
 print "The overlap of a and b is: " + str(common)
+
+#Alternative
+
+result=[i for i in a if i in b]
+
+print result
