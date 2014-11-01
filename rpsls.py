@@ -85,17 +85,19 @@ def rpsls(p, m):
 	else:
 		return none
 
-#user_win variable keeps a count on how many times user win. Tries keeps a count of how many times user has played. 
+# "User_win/tie" variables keeps a count on how many times user win/tie. "Count" lets user choose how many times
+#they want to play against the computer. "Tries" keeps a count of how many times user has played. 
  
 def main():
 	print "Welcome to Sheldon Cooper's famous Rock-Paper-Scissors-Lizard-Spock game."
 	print "Here're the rules:\nScissors cut Paper\nPaper covers Rock\nRock crushes Lizard \nLizard poisons Spock \n\
 Spock smashes Scissors \nScissors decapitate Lizard \nLizard eats Paper \nPaper disproves Spock \nSpock vaporizes Rock \nRock crushes Scissors." 
-	print "You have 3 times to play with the computer. Type 'exit' to quit the game."
+	count=int(raw_input("How many times do you want to play against the computer? Choose 1 to 10: "))  
+	print "Type 'exit' to quit the game."
 	user_win=0
 	tie=0
 	tries=1
-	while tries<=3: 
+	while tries<=count: 
 		player=name_to_num(str(raw_input("Choose one out of 'rock, paper, scissors, lizard or spock': ")))
 		if player==200:
 			print "Thanks for playing. We'll miss you. You won "+str(user_win)+" times and tied "+ str(tie)+" times."
@@ -107,7 +109,7 @@ Spock smashes Scissors \nScissors decapitate Lizard \nLizard eats Paper \nPaper 
 			user_win+=1
 		elif rpsls(player,machine)=="It's a tie!":
 			tie+=1
-		print "You have "+ str(3-tries) + " more chances."
+		print "You have "+ str(count-tries) + " more chances."
 		tries+=1
 	print "Game Over. You won the computer "+str(user_win)+" times and tied "+ str(tie)+" times."
 
