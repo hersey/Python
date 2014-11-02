@@ -5,6 +5,8 @@ Write a password generator in Python. Be creative with how you generate password
 and symbols. The passwords should be random, generating a new password every time 
 the user asks for a new password. Include your run-time code in a main method.
 
+Link: http://www.practicepython.org/exercise/2014/05/28/16-password-generator.html
+
 
 The password generator includes two user inputs: 
 1. How many digits of password users want to generate: ask for a number
