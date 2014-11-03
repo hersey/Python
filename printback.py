@@ -15,8 +15,8 @@ user=raw_input("Give me a sentence: ")
 
 def backward(x):
 	s=x.split()
-	#return ' '.join(s[::-1])  #can also use reversed()
-	return ' '.join(reversed(s))
+	return ' '.join(s[::-1])  #can also use reversed()
+	#return ' '.join(reversed(s))
 
 print backward(user)
 
