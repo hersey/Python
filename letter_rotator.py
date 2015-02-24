@@ -20,7 +20,9 @@ Method 1 below has some problems: for example, letter "a" is converted to "{" in
 The recommended solution is to use string.maketrans(from, to). See method 2. 
 '''
 
+
 #### Method 1 #####
+'''
 import string
 
 def letter_rotator():
@@ -34,25 +36,20 @@ def letter_rotator():
 		else: 
 			new_pos=position+num
 			print chr(new_pos),
-
+			
 letter_rotator()
 
-
+'''
 #### Method 2 #####
 import string
 
 def letter_rotator():
-	para=str(raw_input("Input the paragraph you want to decode: "))  
+	text=str(raw_input("Input the paragraph you want to decode: "))  
 	num=int(raw_input("Input the number of letters you want to count FORWARD/BACKWARD: "))
-
-	for i in para:
-		position=ord(i)
-		if position==32:
-			new_pos=maketrans
-			print chr(new_pos),
-		else: 
-			new_pos=position+num
-			print chr(new_pos),
+	table = string.maketrans(
+		string.ascii_lowercase,
+		string.ascii_lowercase[num:]+string.ascii_lowercase[:num])
+	print string.translate(text,table) 
 
 letter_rotator()
 
