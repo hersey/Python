@@ -8,7 +8,7 @@ import urllib, re
 baseurl="http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing="
 
 #pageid="12345"
-pageid="46059"
+pageid="8022"
 
 counter=0
 while counter < 410: #arbitrary big number
@@ -24,3 +24,8 @@ while counter < 410: #arbitrary big number
  	counter+=1
 
 print pagedata
+
+#84 (next  16044 ): and the next nothing is 16044
+#Yes. Divide by two and keep going. ---Got this. Need to change the pageid to 8022 and continue.
+
+#Got answer: peak.html

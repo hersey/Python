@@ -1,3 +1,6 @@
+#Level 3 of Python Challenge
+#http://www.pythonchallenge.com/pc/def/equality.html
+
 #Find pattern: This program is written to find the follow patter:
 #Three capital letters + One lower case + Three capital letters
 #the source is an url input by the user. 
@@ -27,6 +30,6 @@ text=response.read()
 
 print "".join(re.findall('[^A-Z][A-Z]{3}([a-z])[A-Z]{3}[^A-Z]', text))
 
-# () is used to define groiups. Only the contents in the group is returned (in this case [a-z])
-
+# () is used to define groups. Only the contents in the group is returned (in this case [a-z])
+#[^A-Z] means match any characters besides A-Z, {3} means three of the previous pattern.
 

@@ -1,0 +1,12 @@
+
+Python challenge progress: 
+http://www.pythonchallenge.com/
+
+Level 0: 274877906944.html (Done) 
+Level 1: ocr.html (Done)   letter_rotator.py
+Level 2: equality.html (Done) letterinpagesource.py
+Level 3: linkedlist.html (Done) find_pattern.py
+Level 4: peak.html (Done) linkedlist.py
+Level 5: channel.html (Need to revisit Pickle. Didn't solve it) pickle.py
+Level 6: STUCK!!!!!
+
